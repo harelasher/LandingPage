@@ -123,7 +123,7 @@ export function SkillIcon({ id, label }: SkillIconProps) {
       </motion.div>
       <motion.span
         variants={labelVariants}
-        className="w-full text-center font-mono text-[10px] leading-tight text-offwhite/70"
+        className="flex min-h-[2rem] w-full items-center justify-center text-center font-mono text-[10px] leading-tight text-offwhite/70"
       >
         {label}
       </motion.span>
