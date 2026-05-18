@@ -13,7 +13,7 @@ export default function OpengraphImage() {
           display: "flex",
           flexDirection: "column",
           alignItems: "flex-start",
-          justifyContent: "flex-end",
+          justifyContent: "center",
           backgroundColor: "#0f0f11",
           backgroundImage:
             "linear-gradient(to right,rgba(244,244,246,0.04) 1px,transparent 1px),linear-gradient(to bottom,rgba(244,244,246,0.04) 1px,transparent 1px)",
