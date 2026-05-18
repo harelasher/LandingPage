@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import { BlueprintProvider } from "@/context/BlueprintContext";
 import { SmoothScroll } from "@/components/layout/SmoothScroll";
 import "./globals.css";
@@ -89,6 +91,8 @@ export default function RootLayout({
         <SmoothScroll>
           <BlueprintProvider>{children}</BlueprintProvider>
         </SmoothScroll>
+        <Analytics />
+        <GoogleAnalytics gaId="G-7Q1HZZK9LM" />
       </body>
     </html>
   );
