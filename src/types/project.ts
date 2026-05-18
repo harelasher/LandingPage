@@ -28,6 +28,7 @@ export type Project = {
   achievements: string[];
   imageSrc: string;
   imageAlt: string;
+  url?: string;
   flagship?: boolean;
   topology: {
     nodes: TopologyNode[];

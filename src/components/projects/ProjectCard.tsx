@@ -88,6 +88,7 @@ export function ProjectCard({ project, priorityImage }: ProjectCardProps) {
                 src={project.imageSrc}
                 alt={project.imageAlt}
                 priority={priorityImage}
+                url={project.url}
               />
             </motion.div>
           ) : (

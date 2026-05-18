@@ -14,6 +14,7 @@ export const projects: Project[] = [
     ],
     imageSrc: "/images/projects/plotseeker.png",
     imageAlt: "PlotSeekerAI book discovery interface",
+    url: "plotseekerai.com",
     flagship: true,
     topology: {
       nodes: [

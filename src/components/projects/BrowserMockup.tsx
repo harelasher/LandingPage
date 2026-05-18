@@ -5,9 +5,10 @@ type BrowserMockupProps = {
   src: string;
   alt: string;
   priority?: boolean;
+  url?: string;
 };
 
-export function BrowserMockup({ src, alt, priority }: BrowserMockupProps) {
+export function BrowserMockup({ src, alt, priority, url }: BrowserMockupProps) {
   return (
     <div className="overflow-hidden rounded-lg border border-offwhite/10 bg-[#1a1a1e] shadow-2xl">
       <div className="flex items-center gap-2 border-b border-offwhite/10 px-3 py-2">
@@ -17,7 +18,7 @@ export function BrowserMockup({ src, alt, priority }: BrowserMockupProps) {
         <div className="ml-2 flex flex-1 items-center gap-2 rounded-md bg-obsidian px-3 py-1 font-mono text-[10px] text-offwhite/50">
           <Lock className="h-3 w-3 text-emerald-500/80" />
           <Globe className="h-3 w-3" />
-          <span className="truncate">localhost:5173</span>
+          <span className="truncate">{url ?? "localhost:5173"}</span>
         </div>
       </div>
       <div className="relative flex min-h-[240px] w-full items-center justify-center bg-[#121214] p-3 sm:min-h-[320px] md:min-h-[400px]">
